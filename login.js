@@ -21,6 +21,13 @@
 ////////////////////////////////////////////////////////////
 //email
 let email = document.querySelector("#email");
+
+//email.addEventListener("blur", emailBlur);
+//u can use this code to replace *onblur=" emailBlur()"* from html to js
+//onblur=" emailBlur()"  =>   "blur", emailBlur
+//without 'on' for event
+//without () for function
+
 function emailBlur() {
   if (email.value.length < 12) {
     alert("email must contain at least 12 characters.");
