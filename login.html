@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="./login.style.css" />
   </head>
   <body>
+    <!-- <h2 class="massage">data is correct.</h2> -->
     <div>
       <img src="./img/download.png" alt="ops!" />
       <h1>TWITTER</h1>
       <label for="email">EMAIL</label>
-      <input type="email" placeholder="email@text.com" id="email" />
+      <input
+        type="email"
+        placeholder="email@text.com"
+        id="email"
+        onblur=" emailBlur()" />
       <label for="password">PASSWORD</label>
       <input
         type="password"
         placeholder="at least 6 digit long"
-        id="password" />
+        id="password"
+        onblur="passwordBlur()" />
       <button onclick="charchecker1() ,charchecker2()">LOGIN</button>
     </div>
     <script src="./login.js"></script>
